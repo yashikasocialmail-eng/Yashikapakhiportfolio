@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Pakhi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #fde8ef 0%, #fdf2f8 100%);
+    }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(236, 72, 153, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<nav class="bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Back Button -->
+    <button
+      onclick="history.back()"
+      class="text-sm font-medium text-gray-600 hover:text-pink-600 transition"
+    >
+      ← Back
+    </button>
+
+    <!-- Brand -->
+    <span class="text-sm font-semibold text-pink-600">
+      Pakhi
+    </span>
+
+  </div>
+</nav>
+
+<!-- PROJECTS -->
+<section class="py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Heading -->
+    <h1 class="text-4xl font-semibold text-gray-800 text-center mb-3">
+      Projects
+    </h1>
+    <p class="text-center text-gray-600 mb-14">
+      These are a few of my projects.
+    </p>
+
+    <!-- FEATURED PROJECTS -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+
+      <!-- Project 1 -->
+      <div class="card-hover bg-white p-6 rounded-2xl shadow">
+        <img src="images/steering-wheel.jpg" class="h-44 w-full object-cover rounded-xl mb-4" alt="">
+        <h3 class="font-semibold mb-2">ESP32 Steering Wheel for GTA 5</h3>
+        <p class="text-sm text-gray-600">
+          Wireless steering wheel using ESP32 acting as a Bluetooth HID device.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card-hover bg-white p-6 rounded-2xl shadow">
+        <img src="images/pir-tab-changer.jpg" class="h-44 w-full object-cover rounded-xl mb-4" alt="">
+        <h3 class="font-semibold mb-2">Automatic Tab Changer (PIR Sensor)</h3>
+        <p class="text-sm text-gray-600">
+          Automatically switches browser tabs based on human motion detection.
+        </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card-hover bg-white p-6 rounded-2xl shadow">
+        <img src="images/hand-gesture-control.jpg" class="h-44 w-full object-cover rounded-xl mb-4" alt="">
+        <h3 class="font-semibold mb-2">Hand Gesture Computer Control</h3>
+        <p class="text-sm text-gray-600">
+          Control mouse and system actions using hand gesture recognition.
+        </p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card-hover bg-white p-6 rounded-2xl shadow">
+        <img src="images/tic-tac-toe.jpg" class="h-44 w-full object-cover rounded-xl mb-4" alt="">
+        <h3 class="font-semibold mb-2">Tic Tac Toe (Computer-Based)</h3>
+        <p class="text-sm text-gray-600">
+          Interactive tic tac toe game built using programming logic and UI.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- SOFTWARE PROJECTS (TEXT ONLY) -->
+    <div class="max-w-3xl mx-auto text-center bg-white rounded-2xl shadow p-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        150+ Software Projects
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        In addition to the featured projects above, I have built over
+        <strong>150 software-based projects</strong> across multiple domains,
+        including Python, C/C++, Java, web development, automation scripts,
+        and problem-solving programs.
+      </p>
+    </div>
+
+    <!-- Redirect -->
+    <p class="text-center text-gray-600 mt-20">
+      For more projects, visit
+      <a
+        href="https://codewithpakhi.com"
+        target="_blank"
+        class="text-pink-600 hover:underline"
+      >
+        codewithpakhi.com
+      </a>
+    </p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-6 text-center text-gray-500 text-sm">
+  © 2025 Pakhi
+</footer>
+
+</body>
+</html>
